@@ -25,11 +25,11 @@
   <body>
     <div id="elMap"></div>
     <script>
-      var map = L.map('elMap').setView([22.536836, 113.951513], 13);
-      L.tileLayer('http://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+      var map = L.map('elMap').setView([16.373,109.819], 6);
+      L.tileLayer('http://mt0.google.com/vt/lyrs=r&x={x}&y={y}&z={z}', {
         maxZoom: 15,
-        minZoom: 5,
-        subdomains: ['1', '2', '3', '4']
+        minZoom: 5
+        //subdomains: ['1', '2', '3', '4']
       }).addTo(map)
 
       var plugin = L.control.measure({
